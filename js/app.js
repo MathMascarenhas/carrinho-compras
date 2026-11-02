@@ -15,3 +15,8 @@ function adicionar () {
     document.getElementById('valor-total').innerHTML = `R$${previousTotal +( productPrice * quantity)}`;
     document.getElementById('quantidade').value = 0;
 }
+
+function limpar () {
+    document.getElementById('lista-produtos').innerHTML = '';
+    document.getElementById('valor-total').innerText = "R$0"
+}
